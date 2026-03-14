@@ -2,36 +2,116 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>📰 每日精选日报</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>荆生的AI观察日记</title>
     <style>
-        body { font-family: -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
-        .container { background: white; padding: 30px; border-radius: 12px; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 10px 0; padding: 15px; background: #f9f9f9; border-radius: 8px; }
-        a { color: #2196F3; text-decoration: none; font-size: 1.1em; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.6; 
+            background: #f5f5f5;
+            color: #333;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        header { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            padding: 40px 20px; 
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 { font-size: 2em; margin-bottom: 10px; }
+        header p { opacity: 0.9; font-size: 1.1em; }
+        .article-list { list-style: none; }
+        .article-item {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .article-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .article-date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .article-title {
+            font-size: 1.3em;
+            color: #2c3e50;
+            text-decoration: none;
+            display: block;
+        }
+        .article-title:hover { color: #667eea; }
+        .article-excerpt {
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+        .tag {
+            display: inline-block;
+            background: #e8f4f8;
+            color: #3498db;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>荆生的AI观察日记</h1>
+        <p>用普通人视角，抓住AI信息差</p>
+    </header>
+    
     <div class="container">
-        <h1>📰 每日精选日报</h1>
-        <p>🤖 AI精选 · 💼 副业灵感 · 📈 交易动态</p>
-        <ul>
-            <li><a href="2026-03-14.html">2026-03-14</a></li>
-            <li><a href="2026-03-03.html">2026-03-03</a></li>
-            <li><a href="2026-02-28.html">2026-02-28</a></li>
-            <li><a href="2026-02-27.html">2026-02-27</a></li>
-            <li><a href="2026-02-26.html">2026-02-26</a></li>
-            <li><a href="2026-02-25.html">2026-02-25</a></li>
-            <li><a href="2026-02-22.html">2026-02-22</a></li>
-            <li><a href="2026-02-10.html">2026-02-10</a></li>
-            <li><a href="2026-02-09.html">2026-02-09</a></li>
-            <li><a href="2026-02-07.html">2026-02-07</a></li>
-            <li><a href="2026-02-06.html">2026-02-06</a></li>
-            <li><a href="2026-02-05.html">2026-02-05</a></li>
-            <li><a href="2026-02-04.html">2026-02-04</a></li>
-            <li><a href="2026-02-03.html">2026-02-03</a></li>
+        <ul class="article-list">
+            <li class="article-item">
+                <div class="article-date">2026-03-14</div>
+                <a href="2026-03-14.html" class="article-title">AI日报 | 3月14日每日精选</a>
+                <div class="article-excerpt">聚合当日 AI 工具、开源项目与市场动态，作为 03-14 的早报补发入口。</div>
+                <span class="tag">AI日报</span>
+            </li>
+            <li class="article-item">
+                <div class="article-date">2026-03-13</div>
+                <a href="2026-03-13-20-00-anthropic-pentagon-ai-red-lines.html" class="article-title">Anthropic硬刚五角大楼：AI公司的底线，会变成普通人的新机会吗？</a>
+                <div class="article-excerpt">当 AI 公司开始为用途边界和伦理红线公开硬刚政府，真正被改写的，不只是采购关系，而是未来 AI 行业的信任规则、合规门槛和普通人的新机会。</div>
+                <span class="tag">深度专稿</span>
+            </li>
+            <li class="article-item">
+                <div class="article-date">2026-03-13</div>
+                <a href="2026-03-13-18-00-anthropic-dod-hot-analysis.html" class="article-title">Anthropic起诉五角大楼：这场官司，为什么会影响每个用AI的人？</a>
+                <div class="article-excerpt">这不是一场普通的政府采购纠纷，而是 AI 公司在争夺技术边界的解释权。对普通人来说，真正的机会在 AI 合规、治理、培训和内容服务。</div>
+                <span class="tag">热点分析</span>
+            </li>
+            <li class="article-item">
+                <div class="article-date">2026-03-13</div>
+                <a href="2026-03-13.html" class="article-title">AI日报 | 微软联合科技巨头力挺Anthropic对抗五角大楼</a>
+                <div class="article-excerpt">3月12日，微软、Google、苹果、OpenAI联合支持Anthropic的法律挑战。这是AI公司首次大规模联合对抗政府机构，核心争议在于AI军事用途的伦理红线。</div>
+                <span class="tag">AI日报</span>
+            </li>
+            <li class="article-item">
+                <div class="article-date">2026-03-12</div>
+                <a href="2026-03-12.html" class="article-title">OpenAI收购Promptfoo背后：AI安全正在成为新战场</a>
+                <div class="article-excerpt">2026年3月9日，OpenAI宣布收购AI安全初创公司Promptfoo。这标志着AI安全从"事后补救"转向"事前预防"。本文深度分析AI安全市场的三个层次，以及普通人能抓住的变现机会。</div>
+                <span class="tag">深度分析</span>
+            </li>
         </ul>
-        <p style="text-align:center;color:#999">OpenClaw 自动生成 · 🤖 Gemini 3 Flash</p>
     </div>
+    
+    <footer>
+        <p>关注「荆生的AI观察日记」，每天带你抓住AI信息差</p>
+    </footer>
 </body>
 </html>

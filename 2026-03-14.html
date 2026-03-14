@@ -7,72 +7,77 @@
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.8; max-width: 860px; margin: 0 auto; padding: 20px; color: #333; }
         h1 { font-size: 1.9em; border-bottom: 2px solid #667eea; padding-bottom: 10px; }
-        h2 { font-size: 1.4em; margin-top: 2em; color: #2c3e50; border-left: 4px solid #667eea; padding-left: 10px; }
-        h3 { font-size: 1.08em; color: #34495e; margin-top: 1.4em; }
-        .lead { background: #f8f9fa; border-left: 4px solid #667eea; padding: 16px; margin: 18px 0; }
-        .item { border-bottom: 1px solid #eee; padding: 14px 0; }
-        .item:last-child { border-bottom: none; }
-        .what { font-weight: 700; color: #2c3e50; }
-        .so-what { color: #555; margin-top: 6px; }
-        .tag { display: inline-block; background: #eef4ff; color: #4a67d6; padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-right: 8px; }
+        h2 { font-size: 1.35em; margin-top: 2em; color: #2c3e50; }
+        .headline { background: #f8f9fa; border-left: 4px solid #e74c3c; padding: 16px; margin: 18px 0; }
+        .headline strong { color: #c0392b; }
+        .news-list { list-style: none; padding: 0; }
+        .news-list li { padding: 14px 0; border-bottom: 1px solid #eee; }
+        .news-list li:last-child { border-bottom: none; }
+        .title { font-weight: 700; color: #2c3e50; display: block; margin-bottom: 4px; }
+        .src { color: #888; font-size: 0.9em; }
+        .summary { color: #555; }
+        .deep { background: #eef5ff; padding: 16px; border-radius: 8px; margin-top: 16px; }
         .note { color: #666; font-size: 0.92em; }
-        .summary-box { background: #f6fbf7; border: 1px solid #d9f0dc; padding: 14px; border-radius: 8px; }
     </style>
 </head>
 <body>
     <h1>AI日报 | 2026年3月14日</h1>
 
-    <div class="lead">
-        <p><strong>3月14日的 AI 世界，关键词已经不只是“模型更强”，而是“企业边界、产业落地、责任划分和真实预算”。</strong> 今天值得看的，不是单一大厂表态，而是这几个信号正在一起出现：企业客户更看重可控，政策端更强调落地，安全问题继续抬高审计与合规的价值。</p>
+    <div class="headline">
+        <strong>今日头条</strong>
+        <p>微软已向法院提交支持文件，站到 Anthropic 一边，反对美国国防部将其列为“供应链风险”。这件事的意义不在于一家 AI 公司和政府打官司，而在于大型企业客户未来采购 AI 时，是否会接受“模型能力强，但使用边界不清”的产品。</p>
     </div>
 
-    <h2>今日重点速览</h2>
+    <h2>今日资讯汇总</h2>
+    <ul class="news-list">
+        <li>
+            <span class="title">微软支持 Anthropic 对抗五角大楼</span>
+            <span class="summary">Reuters 报道称，微软提交 amicus brief，支持 Anthropic 暂停执行五角大楼的“供应链风险”认定。此前，Google 与 OpenAI 的部分研究人员也已公开表态支持 Anthropic。</span>
+            <span class="src">来源：Reuters / TechCrunch</span>
+        </li>
+        <li>
+            <span class="title">微软将 Anthropic 模型接入 Copilot 体系</span>
+            <span class="summary">Reuters 报道称，微软已在 M365 Copilot 场景中引入 Anthropic 最新 Sonnet 模型。对企业用户来说，这意味着未来买的不是单一模型，而是多模型组合能力。</span>
+            <span class="src">来源：Reuters</span>
+        </li>
+        <li>
+            <span class="title">OpenAI 与 Anthropic 的上市预期继续升温</span>
+            <span class="summary">Reuters Breakingviews 认为，两家公司都在朝 IPO 方向靠近。市场关注点正在从模型跑分，转向收入质量、企业续费率、推理成本和治理风险。</span>
+            <span class="src">来源：Reuters Breakingviews</span>
+        </li>
+        <li>
+            <span class="title">国内“AI+制造”继续推进，工业智能体成政策关键词</span>
+            <span class="summary">公开政策解读显示，工业侧的重点不是聊天机器人，而是把 AI 接进排产、质检、运维和供应链。制造业场景正在成为 AI 落地的重要方向。</span>
+            <span class="src">来源：公开政策解读</span>
+        </li>
+        <li>
+            <span class="title">伊朗学校误炸事件，外界继续追问 AI 目标识别风险</span>
+            <span class="summary">AP 与多家媒体持续跟进事件细节。虽然责任归因仍在调查，但“算法参与高风险决策后如何追责”已成为新一轮讨论焦点。</span>
+            <span class="src">来源：AP / 相关媒体跟进</span>
+        </li>
+        <li>
+            <span class="title">AI 大模型竞争从“谁更强”转向“谁更稳、更可交付”</span>
+            <span class="summary">过去一周围绕 GPT、Claude、Gemini 的讨论依旧密集，但企业采购逻辑已发生变化：权限、审计、部署、价格和合规，正在变得和模型能力一样重要。</span>
+            <span class="src">来源：行业报道综合</span>
+        </li>
+        <li>
+            <span class="title">AI 行业的服务层机会继续放大</span>
+            <span class="summary">随着模型逐渐基础设施化，安全测试、企业知识库接入、工作流编排、合规咨询、行业 Agent 封装等服务，正在成为更可持续的商业机会。</span>
+            <span class="src">来源：行业动态综合</span>
+        </li>
+    </ul>
 
-    <div class="item">
-        <div class="what"><span class="tag">企业AI</span>微软支持 Anthropic 的法律立场，但这条线今天不再当头条</div>
-        <div class="so-what">原因很简单：它的重要性还在，但对今天来说新增信息不足。对读者真正有价值的增量，是你能看到大厂正在把“可控、合规、边界清晰”当成企业 AI 的卖点，而不是只卷模型能力。</div>
-    </div>
-
-    <div class="item">
-        <div class="what"><span class="tag">AI Agent</span>微软把 Anthropic 新模型接入 Copilot 体系，说明企业侧已经不再只押单一模型</div>
-        <div class="so-what">从 Reuters 的公开报道看，Microsoft 已在 M365 Copilot 场景中引入 Anthropic 最新模型。信号很清楚：企业客户未来买的不是某一家模型，而是“多模型调度 + 安全兜底 + 工作流集成”的组合能力。</div>
-    </div>
-
-    <div class="item">
-        <div class="what"><span class="tag">商业模式</span>OpenAI 与 Anthropic 的 IPO 预期，被市场当成今年 AI 资本线索之一</div>
-        <div class="so-what">Reuters Breakingviews 已经把这件事摆上桌面：如果两家头部模型公司都在准备上市，市场接下来看的就不只是技术发布，而是收入质量、企业续费率、推理成本和风险控制。普通人如果做内容或咨询，关注“谁更会赚钱”会比“谁又发了新 benchmark”更值钱。</div>
-    </div>
-
-    <div class="item">
-        <div class="what"><span class="tag">中国市场</span>“AI+制造”继续推进，工业智能体正在从口号变成政策方向</div>
-        <div class="so-what">公开政策解读显示，国内这条线的核心不是做聊天机器人，而是把 AI 接进设备、排产、质检、运维、供应链。对普通人来说，这意味着真正可收费的机会很可能在产业服务，而不是纯流量内容。</div>
-    </div>
-
-    <div class="item">
-        <div class="what"><span class="tag">安全</span>伊朗学校误炸事件持续发酵，AI 参与目标识别的风险再次被放大</div>
-        <div class="so-what">不管最终责任怎样界定，舆论已经把问题抛得很直接：当算法参与高风险决策时，谁负责？这类事件会继续推高 AI 审计、可解释、人工复核和责任划分的需求。</div>
-    </div>
-
-    <div class="item">
-        <div class="what"><span class="tag">竞争格局</span>模型竞赛正在从“谁最强”切换到“谁更稳、更能落地”</div>
-        <div class="so-what">这几周大家还在谈 GPT、Claude、Gemini 谁领先，但企业采购逻辑已经开始变：比起极限能力，客户更看重权限、审计、部署、 SLA、价格和合规。换句话说，AI 下半场越来越像软件业，而不是纯实验室竞赛。</div>
-    </div>
-
-    <div class="item">
-        <div class="what"><span class="tag">机会判断</span>2026 年最值得盯的，不是单一新模型，而是“模型之外的服务层”</div>
-        <div class="so-what">包括：AI 安全测试、企业知识库接入、工作流编排、行业 Agent 封装、合规咨询、培训和代运营。模型会越来越像基础设施，真正的利润，往往出在最后一公里。</div>
-    </div>
-
-    <h2>今天为什么没有继续把 Anthropic 放头条？</h2>
-        <h2>给普通人的一句提醒</h2>
-    <div class="summary-box">
-        现在最值得做的，不是每天追着模型名词跑，而是反复问一个问题：<strong>这些新闻最后会在哪个真实业务环节变成预算？</strong> 谁能回答这个问题，谁就更接近 AI 时代里真正能赚钱的位置。
+    <h2>深度解读</h2>
+    <div class="deep">
+        <p>今天最值得注意的不是某个新模型发布，而是企业 AI 的采购标准正在变化。</p>
+        <p>过去大家更关注模型能力：谁更聪明、谁更便宜、谁上下文更长。现在越来越多企业开始把问题换成：这套 AI 能不能被审计？权限怎么控？出了事谁负责？能不能稳定接入现有流程？</p>
+        <p>从这个角度看，Anthropic 与五角大楼的冲突、微软引入多模型、国内推进工业智能体，其实都指向同一件事：AI 正在从“炫技工具”走向“正式生产力工具”。</p>
     </div>
 
     <h2>一句话总结</h2>
-    <p>今天的 AI 世界，表面上还是大厂和模型在打架，底层其实已经转向：谁能把 AI 做成可控、可交付、可负责的生意。</p>
+    <p>今天的 AI 新闻，核心不是谁又刷新了分数，而是 AI 正在被放进更真实、更严格、也更能产生预算的场景里。</p>
 
-    <p class="note">说明：本文按 03-14 早报定位整理，强调“新鲜资讯汇总 + 对普通人的意义”；涉及 Reuters 等媒体近几日报道及公开政策解读，后续若有更明确新增进展，应再滚动更新。</p>
+    <p class="note">注：本文按日报格式整理，优先保留 03-14 仍具资讯价值的公开报道与政策动向；部分事件仍在持续发展，以后续正式披露为准。</p>
 
     <hr>
     <p><strong>关注「荆生的AI观察日记」，每天带你抓住AI信息差。</strong></p>
